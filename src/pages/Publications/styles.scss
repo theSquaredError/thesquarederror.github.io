@@ -1,0 +1,40 @@
+.publication {
+	color: #484848;
+	background-color: #fff;
+	// font-family: sans-serif, -apple-system;
+	font-family: lucida Sans;
+	font-size: 1.2em;
+	font-weight: 150;
+	line-height: 1.5em;
+
+	h1 {
+		margin-top: 7rem;
+		a {
+			text-decoration: none;
+			font-size: 2rem;
+			font-weight: 500;
+		}
+	}
+	div {
+		// margin-left: 2rem;
+		// margin-right: 6rem;
+		// margin-top: 25px;
+	}
+}
+
+.header-link {
+	color: #484848;
+}
+
+.pub-span {
+	color: #3c8031;
+}
+
+.pub-span:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.pub-img-a {
+	cursor: pointer;
+}

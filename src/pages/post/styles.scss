@@ -1,0 +1,29 @@
+.post {
+	color: #484848;
+	background-color: #fff;
+	// font-family: sans-serif, -apple-system;
+	font-family: lucida Sans;
+	font-size: 1.2em;
+	font-weight: 150;
+	line-height: 1.5em;
+	div {
+		display: flex;
+		align-items: center;
+		margin-bottom: 10px;
+		margin-left: 4rem;
+		.span {
+			margin-left: 23px;
+			font-weight: 600;
+		}
+	}
+}
+h1 {
+	margin-top: 7rem;
+	margin-bottom: 4rem;
+	// margin-left: 2rem;
+}
+.span:hover {
+	color: #3c8031;
+	text-decoration: underline;
+	cursor: pointer;
+}

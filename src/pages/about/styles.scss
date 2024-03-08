@@ -1,0 +1,81 @@
+.about {
+	color: #484848;
+	background-color: #fff;
+	// font-family: sans-serif, -apple-system;
+	font-family: Lucida Sans;
+	font-size: 1.3em;
+	font-weight: 150;
+	line-height: 1.8em;
+	scroll-behavior: smooth;
+	// width: 70%;
+}
+
+.img-about {
+	img {
+		height: 200px;
+		border-radius: 50%;
+	}
+}
+
+.abouth1 {
+	margin-left: 1rem;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+
+p {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.about-cv,
+.about-thesis {
+	margin-left: 4rem;
+}
+
+.about-thesis {
+	margin-bottom: 2rem;
+}
+
+.about-eduction {
+	.about-education-h2 {
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+	}
+
+	.about-degrees {
+		margin-bottom: 2rem;
+	}
+
+	.sch-p {
+		margin-left: 3rem;
+	}
+}
+
+a {
+	color: #3c8031;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+// link img after hover not changing the color
+
+.about-img-link:hover {
+	color: #3c8031;
+	text-decoration: underline;
+}
+
+h1,
+h2 {
+	font-weight: 400;
+}
+
+h3 {
+	font-weight: 500;
+}
+
+// .about-space {
+// 	letter-spacing: 5px;
+// }
