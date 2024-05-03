@@ -45,7 +45,7 @@ const Home = () => {
 						<div>
 							<a
 								href="/"
-								class="hover-name"
+								// class="hover-name"
 								aria-label="Google Scholar"
 								target="_blank"
 								rel="noreferrer"
