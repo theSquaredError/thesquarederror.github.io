@@ -22,15 +22,17 @@ const Footer = () => {
 	};
 
 	return (
-		<div className="footer">
-			<p className="footer-p">
-				{/* &copy; 2023–<span id="year"></span>, Vikas Kumar · Powered by Kuldeep
+		<div className="container">
+			<div className="footer">
+				<p className="footer-p">
+					{/* &copy; 2023–<span id="year"></span>, Vikas Kumar · Powered by Kuldeep
 				Saini */}
-				&copy; 2023–{currentYear}, Vikas Kumar · Developed by{' '}
-				<span className="footer-span" onClick={LinkRef}>
-					Kuldeep Saini
-				</span>
-			</p>
+					&copy; 2023–{currentYear}, Vikas Kumar · Developed by{' '}
+					<span className="footer-span" onClick={LinkRef}>
+						Kuldeep Saini
+					</span>
+				</p>
+			</div>
 		</div>
 	);
 };

@@ -39,6 +39,13 @@
 	}
 }
 
+@media only screen and (max-width: 576px) {
+	.home-top img {
+		width: 170px;
+		height: 170px !important;
+	}
+}
+
 // a:hover {
 // 	fill: #3c8031;
 // }
@@ -48,3 +55,24 @@
 // a:hover .svg_img img {
 // 	color: #3c8031;
 // }
+
+// -------------------------------------------------------------------------------------
+
+.hover-name::before {
+	content: attr(data-name); /* Use the data-name attribute value as content */
+	display: none; /* Initially hide the content */
+	position: absolute;
+	background-color: black;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	z-index: 1;
+	transform: translateX(-46%);
+	bottom: 325px;
+	background-color: #000 #0000 #0000 #0000;
+}
+
+/* Show the content when anchor tag is hovered over */
+.hover-name:hover::before {
+	display: inline-block;
+}
