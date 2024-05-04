@@ -47,7 +47,7 @@ const Home = () => {
 								href="/"
 								class="hover-name"
 								aria-label="Google Scholar"
-								target="_self"
+								target="_"
 								rel="noreferrer"
 								// title="Google Scholar"
 								data-name="Google Scholar"
