@@ -10,9 +10,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
 		<BrowserRouter>
-			<NavBar />
-			<App />
-			<Footer />
+			<div className="parent">
+				<NavBar />
+				<App />
+				<Footer />
+			</div>
 		</BrowserRouter>
 	</React.StrictMode>
 );

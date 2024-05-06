@@ -8,7 +8,7 @@ const Contact = () => {
 				<h1>
 					<span id="contact-h1">Contact</span>
 				</h1>
-				<p>Email: kuldeep161998@gmail.com</p>
+				<p>Email: cs21s001@iittp.ac.in</p>
 			</div>
 		</div>
 	);

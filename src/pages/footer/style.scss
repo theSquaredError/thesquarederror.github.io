@@ -29,3 +29,12 @@
 .footer-span:hover {
 	color: #3c8031;
 }
+
+@media only screen and (max-width: 999px) {
+	.container {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+}
