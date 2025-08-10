@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.086c5650.css",
+    "main.js": "/static/js/main.e34eadb2.js",
+    "static/media/profile.heic": "/static/media/profile.6c1f0b3dbcb5160ba79c.heic",
+    "static/media/VikasResume.pdf": "/static/media/VikasResume.b0b21cdc2b77ba6bd024.pdf",
+    "static/media/github.svg": "/static/media/github.9ce0671497b7277aa2d29a59d4a0528e.svg",
+    "static/media/link-solid.svg": "/static/media/link-solid.b6bf279ba3d9857e2233ffa528b2d50e.svg",
+    "static/media/graduation-cap-solid.svg": "/static/media/graduation-cap-solid.9ab67bb5dce5cab1cee4f82e0c0c1d05.svg",
+    "static/media/about_pdf.svg": "/static/media/about_pdf.c728e0af55a83fea4f7e8ee6b655f267.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.6f05a02bc0a6eda41ae3faee480e4822.svg",
+    "static/media/google-scholar.svg": "/static/media/google-scholar.05debaeccf3a5a46a97e0027aaf074d5.svg",
+    "index.html": "/index.html",
+    "static/media/file-solid-cv.svg": "/static/media/file-solid-cv.fe9e90c1f4e6ceabb8278fc6a17f757e.svg",
+    "static/media/briefcase-solid.svg": "/static/media/briefcase-solid.f6ce788e1ae373122d80dad57f7a3a5c.svg",
+    "main.086c5650.css.map": "/static/css/main.086c5650.css.map",
+    "main.e34eadb2.js.map": "/static/js/main.e34eadb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.086c5650.css",
+    "static/js/main.e34eadb2.js"
+  ]
+}
