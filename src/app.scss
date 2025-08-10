@@ -3,25 +3,28 @@
 	margin: 0;
 }
 
-// height: 100%;
 .app {
 	min-height: 90vh;
 	margin: 1rem 1rem 0 1rem;
 	max-width: 100%;
-	// width: 100%;
 	padding-left: 2rem;
 	padding-right: 2rem;
-	// bottom: 0;
 	position: relative;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+	transition: all 0.3s ease;
+	
 	.app-container {
 		width: 70%;
 	}
 }
+
 .footer-container {
 	position: relative;
 	bottom: 0;
+	background-color: var(--bg-primary);
+	transition: all 0.3s ease;
 }
-// }

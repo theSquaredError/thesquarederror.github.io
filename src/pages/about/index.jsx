@@ -1,170 +1,82 @@
 import React from 'react';
 import './styles.scss';
-import aboutprofile from '../../asset/profile.png';
-import resumeAbout from '../../asset/VikasResume.pdf';
 import aboutPdf from '../../asset/about_pdf.svg';
-import aboutThesis from '../../asset/about_pdf.svg';
-import aboutLinkh2 from '../../asset/link-solid.svg';
-import aboutLinkh3 from '../../asset/link-solid.svg';
-import aboutLinkh3Sch from '../../asset/link-solid.svg';
+import resumeAbout from '../../asset/VikasResume.pdf';
+import graduationIcon from '../../asset/graduation-cap-solid.svg';
+import briefcaseIcon from '../../asset/briefcase-solid.svg';
 
 const About = () => {
 	return (
 		<div className="about" id="aboutid">
 			<div className="about-header">
-				<h1 className="abouth1">About</h1>
-				<div className="img-about">
-					<img src={aboutprofile} alt="Img"></img>
-				</div>
+				<h1>About Me</h1>
 			</div>
 			<div className="about-body">
-				<p>
-					Welcome! I am a fresh Ph.D. graduate at
-					<a href="/"> The Hong Kong Polytechnic University</a>, and I am using
-					digital technologies in philological and humanities research. I am
-					interested in linguistic and cultural exchange along historic trade
-					routes in Asia, especially around the Indian Ocean world and the
-					Maritime Silk Road. My focus is on how to collect, store, process,
-					analyze, and present humanities data in new and exciting ways. I am
-					fascinated by etymology, pre-modern travel and trade, and network
-					theory.
-				</p>
-				<div className="about-cv" id="cv-about">
-					<strong>
-						<a
-							href={resumeAbout}
-							aria-label="Curriculum vitae"
-							title="Download CV"
-							// target="_blank"
-							// rel="noreferrer"
-						>
-							Download CV{' '}
-							<img
-								src={aboutPdf}
-								width="18px"
-								height="18px"
-								alt="Curriculum vitae"
-							/>
-						</a>
-					</strong>
+				<div className="about-intro">
+					<p>
+						I am a passionate researcher and engineer with a strong background in machine learning, 
+						natural language processing, and data analysis. My work focuses on developing innovative 
+						solutions that bridge the gap between cutting-edge research and practical applications.
+					</p>
+					<p>
+						With expertise in Python, deep learning frameworks, and statistical analysis, I enjoy 
+						tackling complex problems and contributing to research that has real-world impact.
+					</p>
 				</div>
-				<p>
-					I have received training in traditional philology from various
-					departments at the <a href="/">Eötvös Loránd University (ELTE)</a> in
-					Budapest, including Semitic and Arabic studies, Korean studies,
-					Islamic studies, and Indology. In Hong Kong, I have studied corpus
-					linguistics and computational linguistics at PolyU, and I also learned
-					about various techniques in natural language processing, machine
-					learning, artificial intelligence, and dash of data science.
-				</p>
-				<p>
-					My PhD dissertation is titled Mapping the Language of Spices: A
-					Corpus-Based, Philological Study on the Words of the Spice Domain, and
-					it aims to be a linguistic account of the spice trade. It is about
-					spices and spice names, and their diffusion around the globe,
-					supervised by <a href="/">Prof. Chu-Ren Huang</a>, and funded by the
-					<a href="/"> Hong Kong PhD Fellowship Scheme (HKPFS)</a>. The
-					dissertation is accompanied by an online database I am currently
-					working on,
-					<a href="/">the Spice & Spice Terminology Database 1.0</a>.
-				</p>
-				<div className="about-thesis">
-					<strong>
-						<a
-							href="https://www.google.co.in/"
-							aria-label="Curriculum vitae"
-							// target="_blank"
-							// rel="noreferrer"
-							title="Download PhD thesis"
-						>
-							Download PhD thesis{' '}
-							<img
-								src={aboutThesis}
-								width="18px"
-								height="18px"
-								alt="Curriculum vitae"
-							/>
-						</a>
-					</strong>
+
+				<div className="about-current-job">
+					<div className="job-card">
+						<div className="job-header">
+							<img src={briefcaseIcon} alt="Current Job" className="job-icon" />
+							<h2>Current Position</h2>
+						</div>
+						<div className="job-content">
+							<h3 className="job-title">Research Engineer</h3>
+							<p className="job-company">TCS Research</p>
+							<p className="job-description">
+								Working on cutting-edge research projects in machine learning and artificial intelligence, 
+								contributing to innovative solutions that drive technological advancement.
+							</p>
+						</div>
+					</div>
 				</div>
-				<hr />
-				<div className="about-eduction">
-					<h2 className="about-education-h2">
+
+				<div className="about-cv-section">
+					<div className="cv-button-container">
+						<a href={resumeAbout} className="cv-download-btn" aria-label="Download CV" title="Download CV" target="_blank" rel="noreferrer">
+							<img src={aboutPdf} alt="PDF" width="18" height="18" />
+							<span>Download CV</span>
+						</a>
+					</div>
+				</div>
+
+				<hr className="section-divider" />
+
+				<div className="about-education">
+					<h2 className="education-title">
+						<img src={graduationIcon} alt="Education" className="education-icon" />
 						Education
-						<a href="#education" className="about-education-heading-h2">
-							<img
-								className="about-img-link"
-								src={aboutLinkh2}
-								alt="Link to heading"
-							/>
-						</a>
 					</h2>
-					<h3 className="about-degrees">
-						Degrees
-						<a href="#degrees" className="about-education-heading-h3">
-							<img
-								className="about-img-link"
-								src={aboutLinkh3}
-								alt="Link to heading"
-							/>
-						</a>
-					</h3>
-					<p>
-						<strong>2019-2023 </strong> PhD in East Asian Linguistics, The Hong
-						Kong Polytechnic University (PolyU) | Hong Kong
-					</p>
-					<p>
-						<strong>2019-2023 </strong> PhD in East Asian Linguistics, The Hong
-						Kong Polytechnic University (PolyU) | Hong Kong
-					</p>
-					<p>
-						<strong>2019-2023 </strong> PhD in East Asian Linguistics, The Hong
-						Kong Polytechnic University (PolyU) | Hong Kong
-					</p>
-					<p>
-						<strong>2019-2023 </strong> PhD in East Asian Linguistics, The Hong
-						Kong Polytechnic University (PolyU) | Hong Kong
-					</p>
-					<h3 className="about-scholarships">
-						Scholarships
-						<a
-							href="#top"
-							className="about-scholarships-h3"
-							title="Move to top"
-						>
-							<img
-								className="about-img-link"
-								src={aboutLinkh3Sch}
-								alt="Link to heading"
-							/>
-						</a>
-					</h3>
-					<p>
-						<strong>2017–2018 </strong> Indonesian Language Course, Yogyakarta
-						State University (UNY) | Yogyakarta
-					</p>
-					<blockquote>
-						<p className="sch-p">
-							via the
-							<a href="https://www.google.co.in/">
-								Darmasiswa Scholarship Program
-							</a>
-							from the Republic of Indonesia
-						</p>
-					</blockquote>
-					<p>
-						<strong>2017–2018 </strong>Indonesian Language Course, Yogyakarta
-						State University (UNY) | Yogyakarta
-					</p>
-					<blockquote>
-						<p className="sch-p">
-							via the
-							<a href="https://www.google.co.in/">
-								Darmasiswa Scholarship Program
-							</a>
-							from the Republic of Indonesia
-						</p>
-					</blockquote>
+					<div className="education-items">
+						<div className="education-item">
+							<div className="education-header">
+								<h3>Master of Science (MS)</h3>
+								<span className="education-year">2020 - 2022</span>
+							</div>
+							<p className="education-institution">Your University Name</p>
+							<p className="education-specialization">Computer Science / Machine Learning</p>
+							<p className="education-location">City, Country</p>
+						</div>
+						<div className="education-item">
+							<div className="education-header">
+								<h3>Bachelor of Technology (BTech)</h3>
+								<span className="education-year">2016 - 2020</span>
+							</div>
+							<p className="education-institution">Your University Name</p>
+							<p className="education-specialization">Computer Science / Information Technology</p>
+							<p className="education-location">City, Country</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

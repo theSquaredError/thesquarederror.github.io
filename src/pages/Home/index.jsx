@@ -3,7 +3,7 @@ import github from '../../asset/github.svg';
 import scholar from '../../asset/google-scholar.svg';
 import linkedin from '../../asset/linkedin.svg';
 import resume from '../../asset/file-solid-cv.svg';
-import profile from '../../asset/profile.png';
+import profile from '../../asset/profile.heic';
 import resumePdf from '../../asset/VikasResume.pdf';
 
 const Home = () => {
@@ -25,7 +25,7 @@ const Home = () => {
 						<img src={profile} alt="Img"></img>
 					</div>
 					<h1>Vikas Kumar</h1>
-					<h2>Digital Philology & Linguistics</h2>
+					<h2>Reasoning & Planning in LLMs, Reinforcment Learning</h2>
 				</div>
 				<div className="home-bottom">
 					<div>
@@ -40,7 +40,7 @@ const Home = () => {
 					</div>
 					<div>
 						<a
-							href="/"
+							href="https://scholar.google.com/citations?user=52jst9wAAAAJ&hl=en"
 							aria-label="Google Scholar"
 							target="_blank"
 							rel="noreferrer"

@@ -1,9 +1,13 @@
 import React from 'react';
 import './styles.scss';
 import { useNavigate } from 'react-router-dom';
+import { useTheme } from '../../context/ThemeContext';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 const NavBar = () => {
 	const navigate = useNavigate();
+	const { theme, toggleTheme } = useTheme();
+
 	return (
 		<div className="navbar">
 			<div className="navbar-container" id="navbarid">
@@ -16,8 +20,8 @@ const NavBar = () => {
 					<div className="nav-item" onClick={() => navigate('/about')}>
 						About
 					</div>
-					<div className="nav-item" onClick={() => navigate('/research')}>
-						Research
+					<div className="nav-item" onClick={() => navigate('/projects')}>
+						Projects
 					</div>
 					<div className="nav-item" onClick={() => navigate('/publications')}>
 						Publications
@@ -25,17 +29,16 @@ const NavBar = () => {
 					<div className="nav-item" onClick={() => navigate('/post')}>
 						Post
 					</div>
-					<div className="nav-item" onClick={() => navigate('/contact')}>
-						Contact
-					</div>
 					<hr style={{ transform: 'rotate(90deg)' }} />
-					<div className="theme">
-						<button class="dropbtn">Theme</button>
-						{/* <div>
-						<div className="auto">Automatic</div>
-						<div className="dark">Dark</div>
-						<div className="light">Light</div>
-					</div> */}
+					
+					<div className="theme-container">
+						<button 
+							className="theme-toggle-btn"
+							onClick={toggleTheme}
+							title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`}
+						>
+							{theme === 'dark' ? <FaSun /> : <FaMoon />}
+						</button>
 					</div>
 				</div>
 			</div>

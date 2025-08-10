@@ -1,0 +1,247 @@
+.projects {
+	color: var(--text-primary);
+	background-color: var(--bg-primary);
+	min-height: 100vh;
+	padding: 2rem;
+	transition: all 0.3s ease;
+
+	.projects-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.projects-header {
+		text-align: center;
+		margin-bottom: 3rem;
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 1rem;
+			color: var(--text-primary);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+
+			.header-icon {
+				color: #3498db;
+				font-size: 2rem;
+			}
+		}
+
+		p {
+			font-size: 1.1rem;
+			color: var(--text-secondary);
+			max-width: 600px;
+			margin: 0 auto;
+			line-height: 1.6;
+		}
+	}
+
+	.projects-section {
+		margin-bottom: 3rem;
+
+		.section-title {
+			font-size: 1.8rem;
+			margin-bottom: 2rem;
+			color: var(--text-primary);
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			border-bottom: 2px solid var(--border-color);
+			padding-bottom: 0.5rem;
+
+			.section-icon {
+				color: #3498db;
+			}
+		}
+
+		.projects-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+			gap: 2rem;
+		}
+	}
+
+	.project-card {
+		background: var(--bg-secondary);
+		border-radius: 12px;
+		padding: 1.5rem;
+		box-shadow: 0 4px 12px var(--shadow-color);
+		transition: all 0.3s ease;
+		border: 1px solid var(--border-color);
+
+		&:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 8px 24px var(--shadow-color);
+		}
+
+		.project-header {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			margin-bottom: 1rem;
+
+			.project-title {
+				font-size: 1.3rem;
+				font-weight: 600;
+				color: var(--text-primary);
+				margin: 0;
+				flex: 1;
+			}
+
+			.project-status {
+				.status {
+					display: inline-flex;
+					align-items: center;
+					gap: 0.3rem;
+					padding: 0.3rem 0.8rem;
+					border-radius: 20px;
+					font-size: 0.8rem;
+					font-weight: 500;
+					text-transform: uppercase;
+					letter-spacing: 0.5px;
+
+					&.ongoing {
+						background: rgba(255, 193, 7, 0.2);
+						color: #ffc107;
+						border: 1px solid rgba(255, 193, 7, 0.3);
+					}
+
+					&.completed {
+						background: rgba(40, 167, 69, 0.2);
+						color: #28a745;
+						border: 1px solid rgba(40, 167, 69, 0.3);
+					}
+				}
+			}
+		}
+
+		.project-description {
+			color: var(--text-secondary);
+			line-height: 1.6;
+			margin-bottom: 1.5rem;
+			font-size: 0.95rem;
+		}
+
+		.project-technologies {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+			margin-bottom: 1.5rem;
+
+			.tech-tag {
+				background: rgba(52, 152, 219, 0.1);
+				color: #3498db;
+				padding: 0.3rem 0.8rem;
+				border-radius: 15px;
+				font-size: 0.8rem;
+				font-weight: 500;
+				border: 1px solid rgba(52, 152, 219, 0.2);
+				transition: all 0.3s ease;
+
+				&:hover {
+					background: rgba(52, 152, 219, 0.2);
+					transform: translateY(-1px);
+				}
+			}
+		}
+
+		.project-links {
+			display: flex;
+			gap: 1rem;
+			flex-wrap: wrap;
+
+			.project-link {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				padding: 0.6rem 1.2rem;
+				border-radius: 8px;
+				text-decoration: none;
+				font-weight: 500;
+				font-size: 0.9rem;
+				transition: all 0.3s ease;
+				border: 1px solid transparent;
+
+				&.github {
+					background: #24292e;
+					color: white;
+
+					&:hover {
+						background: #2f363d;
+						transform: translateY(-2px);
+						box-shadow: 0 4px 12px rgba(36, 41, 46, 0.3);
+					}
+				}
+
+				&.live {
+					background: #3498db;
+					color: white;
+
+					&:hover {
+						background: #2980b9;
+						transform: translateY(-2px);
+						box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+					}
+				}
+			}
+		}
+	}
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+	.projects {
+		padding: 1rem;
+
+		.projects-header {
+			h1 {
+				font-size: 2rem;
+			}
+		}
+
+		.projects-section {
+			.projects-grid {
+				grid-template-columns: 1fr;
+				gap: 1.5rem;
+			}
+		}
+
+		.project-card {
+			padding: 1.2rem;
+
+			.project-header {
+				flex-direction: column;
+				gap: 0.8rem;
+				align-items: flex-start;
+
+				.project-status {
+					align-self: flex-start;
+				}
+			}
+
+			.project-links {
+				flex-direction: column;
+
+				.project-link {
+					justify-content: center;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.projects {
+		.projects-header {
+			h1 {
+				font-size: 1.8rem;
+			}
+		}
+
+		.project-card {
+			padding: 1rem;
+		}
+	}
+}

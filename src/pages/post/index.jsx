@@ -4,60 +4,53 @@ import { useNavigate } from 'react-router-dom';
 
 const Post = () => {
 	const navigate = useNavigate();
+	
+	// Sample blog data - you can replace this with your own blogs later
+	const blogPosts = [
+		{
+			id: 1,
+			date: 'December 15, 2024',
+			title: 'Getting Started with Machine Learning: A Beginner\'s Guide',
+			excerpt: 'An introduction to the fundamentals of machine learning, covering key concepts, algorithms, and practical applications for beginners.',
+			readTime: '5 min read',
+			tags: ['Machine Learning', 'AI', 'Beginner']
+		}
+	];
+
 	return (
 		<div className="post" id="postid">
-			<h1>
-				<sapn id="post-h1"> Post </sapn>
-			</h1>
-			<div className="post-div">
-				<h3>August 7, 2023</h3>
-				<span
-					onClick={() => navigate('/post')}
-					className="span"
-					id="post-link1"
-				>
-					Nutmeg in the flag of Grenada
-				</span>
+			<div className="post-header">
+				<h1>Blog Posts</h1>
+				<p>Thoughts, tutorials, and insights on technology and research</p>
 			</div>
-			<div className="post-div">
-				<h3>August 7, 2023</h3>
-				<span
-					onClick={() => navigate('/post')}
-					className="span"
-					id="post-link2"
-				>
-					Nutmeg in the flag of Grenada
-				</span>
+			
+			<div className="blog-list">
+				{blogPosts.map((post) => (
+					<article key={post.id} className="blog-post">
+						<div className="post-meta">
+							<span className="post-date">{post.date}</span>
+							<span className="read-time">{post.readTime}</span>
+						</div>
+						<h2 className="post-title">{post.title}</h2>
+						<p className="post-excerpt">{post.excerpt}</p>
+						<div className="post-tags">
+							{post.tags.map((tag, index) => (
+								<span key={index} className="tag">{tag}</span>
+							))}
+						</div>
+						<button 
+							className="read-more-btn"
+							onClick={() => navigate(`/post/${post.id}`)}
+						>
+							Read More →
+						</button>
+					</article>
+				))}
 			</div>
-			<div className="post-div">
-				<h3>August 7, 2023</h3>
-				<span
-					onClick={() => navigate('/post')}
-					className="span"
-					id="post-link3"
-				>
-					Nutmeg in the flag of Grenada
-				</span>
-			</div>
-			<div className="post-div">
-				<h3>August 7, 2023</h3>
-				<span
-					onClick={() => navigate('/post')}
-					className="span"
-					id="post-link4"
-				>
-					Nutmeg in the flag of Grenada
-				</span>
-			</div>
-			<div className="post-div">
-				<h3>August 7, 2023</h3>
-				<span
-					onClick={() => navigate('/post')}
-					className="span"
-					id="post-link5"
-				>
-					Nutmeg in the flag of Grenada
-				</span>
+			
+			{/* Placeholder for when you add more blogs */}
+			<div className="coming-soon">
+				<p>More blog posts coming soon! I'm working on sharing insights about my research, projects, and experiences.</p>
 			</div>
 		</div>
 	);

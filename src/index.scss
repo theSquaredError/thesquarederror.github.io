@@ -1,4 +1,41 @@
-* {
+// Theme CSS Variables
+:root {
+	--bg-primary: #ffffff;
+	--bg-secondary: #f8f9fa;
+	--text-primary: #484848;
+	--text-secondary: #6c757d;
+	--border-color: #dee2e6;
+	--shadow-color: rgba(0,0,0,0.1);
+}
+
+// Dark theme variables (will be applied via JavaScript)
+[data-theme="dark"] {
+	--bg-primary: #1a1a1a;
+	--bg-secondary: #2d2d2d;
+	--text-primary: #ffffff;
+	--text-secondary: #b3b3b3;
+	--border-color: #404040;
+	--shadow-color: rgba(0,0,0,0.3);
+}
+
+body {
 	margin: 0;
-	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: var(--bg-primary);
+	color: var(--text-primary);
+	transition: all 0.3s ease;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
+}
+
+// Global theme transitions
+* {
+	transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }

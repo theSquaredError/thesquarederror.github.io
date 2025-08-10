@@ -5,14 +5,17 @@ import './index.scss';
 import { BrowserRouter } from 'react-router-dom';
 import NavBar from './pages/navbar';
 import Footer from './pages/footer';
+import { ThemeProvider } from './context/ThemeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<NavBar />
-			<App />
-			<Footer />
-		</BrowserRouter>
+		<ThemeProvider>
+			<BrowserRouter>
+				<NavBar />
+				<App />
+				<Footer />
+			</BrowserRouter>
+		</ThemeProvider>
 	</React.StrictMode>
 );
