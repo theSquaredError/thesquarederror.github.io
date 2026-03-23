@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "slug": "quantization-in-llms",
+    "date": "March 24, 2026",
+    "title": "Quantization in LLMs: Practical Notes from My Learning Journey",
+    "excerpt": "A practical walkthrough of INT8, INT4, NF4, GPTQ, and AWQ with trade-offs for memory, quality, and serving cost.",
+    "readTime": "12 min read",
+    "tags": ["LLM", "Quantization", "Inference"],
+    "contentFile": "quantization-in-llms.md"
+  },
+  {
+    "id": 2,
+    "slug": "inference-optimization-for-llms",
+    "date": "March 24, 2026",
+    "title": "Inference Optimization for LLMs: Latency, Throughput, and Cost",
+    "excerpt": "A running guide to batching, KV cache tuning, speculative decoding, and hardware-aware serving.",
+    "readTime": "11 min read",
+    "tags": ["LLM", "Optimization", "Serving"],
+    "contentFile": "inference-optimization-for-llms.md"
+  }
+]
