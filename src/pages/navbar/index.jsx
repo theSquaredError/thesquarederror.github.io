@@ -29,8 +29,8 @@ const NavBar = () => {
 					<div className="nav-item" onClick={() => navigate('/post')}>
 						Post
 					</div>
-					<hr style={{ transform: 'rotate(90deg)' }} />
-					
+					<div className="nav-divider" />
+
 					<div className="theme-container">
 						<button 
 							className="theme-toggle-btn"

@@ -24,12 +24,7 @@ const Footer = () => {
 	return (
 		<div className="footer">
 			<p className="footer-p">
-				{/* &copy; 2023–<span id="year"></span>, Vikas Kumar · Powered by Kuldeep
-				Saini */}
-				&copy; 2023–{currentYear}, Vikas Kumar · Developed by{' '}
-				<span className="footer-span" onClick={LinkRef}>
-					Kuldeep Saini
-				</span>
+				&copy; 2025–{currentYear}, Vikas Kumar
 			</p>
 		</div>
 	);

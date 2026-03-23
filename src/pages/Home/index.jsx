@@ -25,7 +25,7 @@ const Home = () => {
 						<img src={profile} alt="Img"></img>
 					</div>
 					<h1>Vikas Kumar</h1>
-					<h2>Reasoning & Planning in LLMs, Reinforcment Learning</h2>
+					<h2>Reasoning & Task Planning in LLMs, Reinforcment Learning, Language Grounding in Multi-Agent Population</h2>
 				</div>
 				<div className="home-bottom">
 					<div>

@@ -5,6 +5,7 @@ import About from './pages/about';
 import Projects from './pages/projects';
 import Publications from './pages/Publications';
 import Post from './pages/post';
+import PostDetail from './pages/post/PostDetail';
 // import Contact from './pages/contact';
 // import Footer from './pages/footer';
 import { Route, Routes } from 'react-router-dom';
@@ -20,6 +21,7 @@ function App() {
 					<Route element={<Projects />} path="/projects" />
 					<Route element={<Publications />} path="/publications" />
 					<Route element={<Post />} path="/post" />
+					<Route element={<PostDetail />} path="/post/:slug" />
 					{/* <Route element={<Contact />} path="/contact" /> */}
 					{/* <Route element={<Footer />} path="/Footer" /> */}
 				</Routes>

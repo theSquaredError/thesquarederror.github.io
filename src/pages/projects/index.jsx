@@ -6,7 +6,7 @@ const Projects = () => {
 	const ongoingProjects = [
 		{
 			id: 1,
-			title: "Portfolio Website",
+			title: "LLM Research Assistant",
 			description: "Personal portfolio website built with React.js and SCSS, featuring dark/light theme toggle and responsive design.",
 			technologies: ["React.js", "SCSS", "JavaScript", "HTML5", "CSS3"],
 			github: "https://github.com/yourusername/portfolio",
@@ -15,10 +15,10 @@ const Projects = () => {
 		},
 		{
 			id: 2,
-			title: "Machine Learning Project",
-			description: "Implementing advanced ML algorithms for natural language processing and pattern recognition.",
-			technologies: ["Python", "TensorFlow", "Scikit-learn", "NLP", "Deep Learning"],
-			github: "https://github.com/yourusername/ml-project",
+			title: "Reactree_MCTS",
+			description: "Advanced task planning agent for solving complex problem like webshop and webarena",
+			technologies: ["Python", "transformers", "Scikit-learn", "NLP", "Deep Learning"],
+			github: "https://github.com/theSquaredError/reactree_webshop",
 			status: "ongoing"
 		}
 	];
@@ -26,19 +26,19 @@ const Projects = () => {
 	const completedProjects = [
 		{
 			id: 3,
-			title: "Data Analysis Dashboard",
-			description: "Interactive dashboard for visualizing complex datasets with real-time updates and filtering capabilities.",
-			technologies: ["Python", "Dash", "Pandas", "Plotly", "SQL"],
-			github: "https://github.com/yourusername/dashboard",
-			live: "https://dashboard-demo.com",
+			title: "Grounding Language in Multiagent Population",
+			description: "Emergence of a language in multi-agent reinforcement learning agent",
+			technologies: ["Python", "Pytorch", "numpy", "OpenAI Gym"],
+			github: "https://github.com/theSquaredError/lang-game-order",
+			live: "",
 			status: "completed"
 		},
 		{
 			id: 4,
-			title: "Web Scraping Tool",
-			description: "Automated web scraping solution with data extraction and export functionality.",
-			technologies: ["Python", "BeautifulSoup", "Selenium", "Pandas", "Flask"],
-			github: "https://github.com/yourusername/scraper",
+			title: "Crypto trading agent",
+			description: "Reinforcement learning solution for crypto trading agent",
+			technologies: ["Python", "Pytorch", "RLLib", "ElegantRL", "nablarl","OpenAI Gym"],
+			github: "https://github.com/theSquaredError/AlgoTrading-InterIIT-TechMeet-12.0/tree/main",
 			status: "completed"
 		}
 	];
